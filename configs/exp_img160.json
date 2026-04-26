@@ -1,0 +1,24 @@
+{
+  "seed": 42,
+  "fields": ["object_type", "integrity", "material_group", "part_zone"],
+  "backbone": "resnet18",
+  "pretrained": false,
+  "image_size": 160,
+  "batch_size": 8,
+  "epochs": 4,
+  "lr": 0.0003,
+  "weight_decay": 0.0001,
+  "optimizer": "adamw",
+  "scheduler": "cosine",
+  "use_class_weights": true,
+  "train_aug": true,
+  "device": "cpu",
+  "template_config": {
+    "thresholds": {
+      "object_type": 0.0,
+      "integrity": 0.0,
+      "part_zone": 0.6,
+      "material_group": 0.65
+    }
+  }
+}

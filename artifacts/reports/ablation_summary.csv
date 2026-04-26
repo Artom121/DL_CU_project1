@@ -1,0 +1,5 @@
+experiment_name,backbone,image_size,augments,loss_setup,fields,best_val_mean_macro_f1,val_f1_object_type,val_f1_integrity,val_f1_material_group,val_f1_part_zone
+no_class_weights,resnet18,224,rotation+brightness/contrast,CE,"object_type,integrity,material_group,part_zone",0.3757047121706837,0.3328221486116223,0.4739336492890995,0.2929330793408463,0.4031299714411669
+img160,resnet18,160,rotation+brightness/contrast,CE + class weights,"object_type,integrity,material_group,part_zone",0.2925198509493294,0.249747585273901,0.5540489642184557,0.1179832493715906,0.2482996049333702
+baseline,resnet18,224,rotation+brightness/contrast,CE + class weights,"object_type,integrity,material_group,part_zone",0.2720376430747792,0.2443070193983992,0.5573350213641399,0.0746820168931616,0.211826514643416
+no_aug,resnet18,224,none,CE + class weights,"object_type,integrity,material_group,part_zone",0.2601257991888177,0.2226452880861103,0.5385929447940097,0.1289810038113051,0.1502839600638456

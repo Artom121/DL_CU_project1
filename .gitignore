@@ -1,0 +1,13 @@
+.DS_Store
+
+# Large raw assets and archives
+data/raw/
+*.zip
+
+# Heavy model binaries
+artifacts/checkpoints/**/best.pt
+artifacts/checkpoints/**/last.pt
+
+# Python cache files
+__pycache__/
+*.py[cod]

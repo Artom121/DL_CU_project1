@@ -1,0 +1,45 @@
+{
+  "output_dir": "artifacts/checkpoints/exp_img160",
+  "best_metric": 0.2925198509493294,
+  "fields": [
+    "object_type",
+    "integrity",
+    "material_group",
+    "part_zone"
+  ],
+  "config": {
+    "seed": 42,
+    "fields": [
+      "object_type",
+      "integrity",
+      "material_group",
+      "part_zone"
+    ],
+    "group_key_column": "group_key",
+    "backbone": "resnet18",
+    "pretrained": false,
+    "image_size": 160,
+    "batch_size": 8,
+    "num_workers": 0,
+    "epochs": 4,
+    "lr": 0.0003,
+    "weight_decay": 0.0001,
+    "optimizer": "adamw",
+    "scheduler": "cosine",
+    "label_smoothing": 0.0,
+    "use_class_weights": true,
+    "train_aug": true,
+    "tiny_subset_size": 48,
+    "tiny_epochs": 12,
+    "device": "cpu",
+    "template_config": {
+      "thresholds": {
+        "object_type": 0.0,
+        "integrity": 0.0,
+        "part_zone": 0.6,
+        "material_group": 0.65
+      }
+    }
+  },
+  "num_parameters": 11189337
+}

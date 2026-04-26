@@ -1,0 +1,15 @@
+name: similis-baseline
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pytorch
+  - torchvision
+  - cpuonly
+  - pandas
+  - numpy
+  - scikit-learn
+  - matplotlib
+  - pillow
+  - tqdm
